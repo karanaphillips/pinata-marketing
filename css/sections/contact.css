@@ -1,0 +1,45 @@
+body.marketplace .page-hero {
+    background: #181a20 !important;
+    background-color: #181a20 !important;
+}
+/* Force dark background on contact page hero, override all */
+body.contact .page-hero {
+    background: #181a20 !important;
+    background-color: #181a20 !important;
+}
+/* Remove any background image/overlay from hero on contact page */
+.contact .page-hero::before {
+    display: none !important;
+}
+/* Ensure the hero section on the contact page uses the dark gray background */
+.contact .page-hero {
+    background: var(--background-dark) !important;
+}
+/* Center the Send Message button in the contact form */
+.contact-form button[type="submit"] {
+    display: block;
+    margin: 2rem auto 0 auto;
+}
+/* Center all headers and labels in the contact form */
+.contact-form label,
+.contact-form h2,
+.contact-form h3,
+.contact-form h4,
+.contact-form h5,
+.contact-form h6 {
+    text-align: center !important;
+    display: block;
+}
+.contact-minimal h1,
+.contact-minimal h2,
+.contact-minimal h3,
+.contact-minimal h4,
+.contact-minimal h5,
+.contact-minimal h6 {
+    text-align: center !important;
+}
+
+/* Ensure contact page background is correct */
+body.contact {
+    background: var(--background-dark);
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Support - Pinata</title>
+    <meta name="description" content="Get in touch with Pinata for support, sales, or general inquiries. Find answers to frequently asked questions and access our knowledge base.">
+    <meta name="keywords" content="contact, support, help, FAQ, documentation, troubleshooting, sales, demo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="contact">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/pinata-logo.webp" alt="Pinata" class="nav-logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="ai-agents.html" class="nav-link">AI Agents</a></li>
+                <li><a href="technology.html" class="nav-link">Technology</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+                <li><a href="company.html" class="nav-link">Company</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-auth"><a href="#" class="auth-btn coming-soon-link">Sign In / Register</a></div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Contact & Support</h1>
+                <p>Get help, ask questions, or start your AI transformation journey. We're here to help 24/7.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support Available</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">&lt;30s</span>
+                        <span class="stat-label">Response Time</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="contact-options">
+                <div class="contact-option">
+                    <div class="option-icon">
+
+                            <section class="contact-minimal">
+                                <div class="container">
+                                    <h1 style="text-align:center;">Contact Us</h1>
+                                    <form id="generalContactForm" class="contact-form" style="max-width:600px;margin:0 auto;">
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="firstName">First Name *</label>
+                                                <input type="text" id="firstName" name="firstName" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lastName">Last Name *</label>
+                                                <input type="text" id="lastName" name="lastName" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="email">Email Address *</label>
+                                                <input type="email" id="email" name="email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">Phone Number</label>
+                                                <input type="tel" id="phone" name="phone">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="company">Company Name</label>
+                                            <input type="text" id="company" name="company">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inquiry">How can we help? *</label>
+                                            <select id="inquiry" name="inquiry" required>
+                                                <option value="">Select an option</option>
+                                                <option value="ai-agents">Learn about AI Agents</option>
+                                                <option value="pricing">Pricing and Plans</option>
+                                                <option value="demo">Request a Demo</option>
+                                                <option value="integration">Technical Integration</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message">Message *</label>
+                                            <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Send Message</button>
+                                    </form>
+                                </div>
+                            </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Join thousands of companies already using Pinata's AI agents to revolutionize their operations</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="openChat()">Start Live Chat</button>
+                    <button class="btn btn-secondary" onclick="scheduleDemo()">Book Demo</button>
+                </div>
+                <p class="cta-note">No credit card required • 14-day free trial • Setup in 24 hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/pinata-logo.webp" alt="Pinata" class="footer-logo-img">
+                    <p>Your AI team that never sleeps</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/pinata-digital-marketing-inc/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/pinataadmin?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="ai-agents.html">AI Agents</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+            </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="company.html">About Us</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+            </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html#support">Documentation</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+            </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pinata. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact page specific JavaScript
+        function openChat() {
+            // In a real implementation, this would open a chat widget
+            alert('Live chat would open here. This is a demo.');
+        }
+
+        function scheduleDemo() {
+            // In a real implementation, this would open a scheduling widget
+            alert('Demo scheduling would open here. This is a demo.');
+        }
+
+        // FAQ Category switching
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const faqCategories = document.querySelectorAll('.faq-category');
+
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+
+                    // Remove active class from all buttons and categories
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    faqCategories.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to clicked button and corresponding category
+                    this.classList.add('active');
+                    document.querySelector(`[data-category="${category}"].faq-category`).classList.add('active');
+                });
+            });
+
+            // FAQ item toggling
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                question.addEventListener('click', function() {
+                    const isOpen = item.classList.contains('open');
+                    
+                    // Close all other FAQ items
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('open');
+                    });
+                    
+                    // Toggle current item
+                    if (!isOpen) {
+                        item.classList.add('open');
+                    }
+                });
+            });
+        });
+
+        // Form handling
+        document.getElementById('generalContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your message has been sent. We\'ll get back to you within 2 hours.');
+        });
+
+        document.getElementById('salesContactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! A sales representative will contact you within 1 hour to discuss your needs.');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* Global aggregator: imports only; no custom rules */
+@import 'core/variables.css';
+@import 'core/reset.css';
+@import 'core/base.css';
+@import 'core/typography.css';
+@import 'components/buttons.css';
+@import 'components/forms.css';
+@import 'layout/navigation.css';
+@import 'layout/footer.css';
+@import 'layout/containers.css';
+@import 'sections/hero.css';
+@import 'sections/features.css';
+@import 'sections/pricing.css';
+@import 'sections/faq.css';
+@import 'sections/contact.css';
+@import 'sections/blog.css';
+@import 'animations.css';
+@import 'responsive.css';

@@ -1,0 +1,143 @@
+/* Center hero-content horizontally and vertically for all hero sections (override grid for contact/marketplace) */
+body.contact .hero-container,
+body.marketplace .hero-container,
+body.ai-agents .hero-container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    padding: 0 var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+body.contact .hero-content,
+body.marketplace .hero-content,
+body.ai-agents .hero-content {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+body.contact .page-hero,
+body.marketplace .page-hero,
+body.technology .page-hero,
+body.ai-agents .page-hero {
+    background: var(--gradient-dark);
+    position: relative;
+    overflow: hidden;
+}
+body.contact .page-hero::before,
+body.marketplace .page-hero::before,
+body.technology .page-hero::before,
+body.ai-agents .page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(0,212,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+}
+/* Hero */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(0,212,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    animation: slideInLeft 1s ease-out;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.hero-visual {
+    position: relative;
+    animation: slideInRight 1s ease-out;
+}
+
+.floating-elements {
+    position: relative;
+    height: 400px;
+}
+
+.floating-card {
+    position: absolute;
+    background: var(--gradient-dark);
+    border: 1px solid rgba(102, 126, 234, 0.3);
+        border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    box-shadow: var(--shadow-md);
+    animation: float 6s ease-in-out infinite;
+    backdrop-filter: blur(10px);
+}
+
+.floating-card[data-float="1"] {
+    top: 50px;
+    left: 50px;
+    animation-delay: 0s;
+}
+
+.floating-card[data-float="2"] {
+    top: 150px;
+    right: 30px;
+    animation-delay: 2s;
+}
+
+.floating-card[data-float="3"] {
+    bottom: 80px;
+    left: 100px;
+    animation-delay: 4s;
+}
+
+.floating-card i {
+    font-size: 2rem;
+    color: var(--text-accent);
+}
+
+.floating-card span {
+    color: var(--text-primary);
+    font-weight: 600;
+}
