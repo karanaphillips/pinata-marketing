@@ -5746,7 +5746,6 @@ section {
 /* Use these classes to ensure proper background alternation */
 
 /* AI Agents Page Specific Backgrounds */
-body.ai-agents .page-hero { background: transparent !important; }
 body.ai-agents .ai-agents-showcase { background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)) !important; }
 body.ai-agents .roi-calculator { background: rgba(0, 0, 0, 0.05) !important; }
 body.ai-agents .implementation { background: linear-gradient(135deg, rgba(118, 75, 162, 0.08), rgba(255, 107, 107, 0.05)) !important; }

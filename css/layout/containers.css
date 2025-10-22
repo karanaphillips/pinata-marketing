@@ -1,3 +1,6 @@
+.cta-stat .stat-number {
+    font-size: 4rem;
+}
 /* Uncategorized (kept unchanged) */
 /* Global Styles */
 
@@ -113,7 +116,7 @@ html {
             radial-gradient(circle at 40% 80%, rgba(255, 107, 107, 0.2) 0%, transparent 50%);
     position: relative;
     overflow: hidden;
-    padding-top: 100px; /* Add space for fixed navbar */
+    /* Removed padding-top to prevent hero from being pushed down. If needed, add a more targeted solution for non-hero sections. */
 }
 
 /* Section Headers */
@@ -148,11 +151,6 @@ html {
 }
 
 /* Page Hero */
-.page-hero {
-    padding: 8rem 0 4rem;
-    background: var(--gradient-dark);
-    text-align: center;
-}
 
 .page-hero p {
     font-size: 1.25rem;
@@ -567,7 +565,7 @@ html {
 
 .stat-number {
     display: block;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 900;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
@@ -578,11 +576,11 @@ html {
 }
 
 .stat-text {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: none;
+    letter-spacing: normal;
 }
 
 .cta-note {

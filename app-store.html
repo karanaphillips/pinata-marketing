@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store - Pinata</title>
+    <meta name="description" content="Discover and install AI-powered apps for digital marketing, productivity, and more on Pinata's App Store.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/app-store.css">
+</head>
+<body class="app-store">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/pinata-logo.webp" alt="Pinata" class="nav-logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="ai-agents.html" class="nav-link">AI Agents</a></li>
+                <li><a href="technology.html" class="nav-link">Technology</a></li>
+                <li><a href="app-store.html" class="nav-link active">App Store</a></li>
+                <li><a href="revolution.html" class="nav-link">Pinata's Revolution</a></li>
+                <li><a href="company.html" class="nav-link">Company</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- <div class="nav-auth"><a href="#" class="auth-btn coming-soon-link">Sign In / Register</a></div> -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main id="main">
+        <!-- Hero Section (same as other non-home pages) -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Pinata App Store</h1>
+                    <p>Discover, install, and manage official Piñata applications for marketing, productivity, and more.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Certified Apps</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Apple Wallet</span>
+                            <span class="stat-label">Integration</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Marketplace</span>
+                            <span class="stat-label">Gateway</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informational Section -->
+        <section class="app-store-info">
+            <div class="container">
+                <div class="info-content">
+                    <h2 style="text-align:center;">Your centralized hub for official Piñata applications</h2>
+                    <p style="text-align:center;">Designed for seamless integration with your mobile experience and unlocking the full potential of our innovative ecosystem.</p>
+                    <div class="info-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 2.5rem 0;">
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-certificate"></i></div>
+                            <h3>Certified Applications</h3>
+                            <p>Access and download exclusive Piñata-certified apps directly, ensuring security, reliability, and full compatibility with our platform.</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fab fa-apple"></i></div>
+                            <h3>Apple Wallet Integration</h3>
+                            <p>Conveniently manage and utilize your Piñata Wallet coupons and credits directly through your Apple Wallet for quick, secure transactions.</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-exchange-alt"></i></div>
+                            <h3>Exchange Access</h3>
+                            <p>Connect instantly to the Piñata Exchange from your device, enabling effortless trading of your earned coupons for valuable credits or cash.</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-store"></i></div>
+                            <h3>Marketplace Gateway</h3>
+                            <p>Explore and acquire a wide array of products and services from our curated marketplace, all accessible and manageable directly via your mobile device.</p>
+                        </div>
+                    </div>
+                    <p style="text-align:center;"><strong>Experience unparalleled convenience and control, bringing the future of digital finance and ethical marketing directly to the palm of your hand.</strong></p>
+                    <div class="info-actions" style="margin-top:2rem; display:flex; gap:1rem; justify-content:center;">
+                        <a href="#" class="btn btn-primary">Download Now</a>
+                        <a href="#apps" class="btn btn-secondary">Browse All Apps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="app-store-list">
+            <div class="container" id="apps">
+                <div class="app-list-header" style="text-align:center; margin-bottom: 1.5rem;">
+                    <h2 style="margin-bottom:0.5rem;">Browse All Apps</h2>
+                    <p style="color:var(--text-secondary);">Explore and install official Piñata applications below.</p>
+                </div>
+                <div class="app-grid">
+                    <!-- Funky Mellow App Card -->
+                    <div class="app-card">
+                        <img src="images/business-using-ai.avif" alt="Funky Mellow" class="app-icon">
+                        <h3>Funky Mellow</h3>
+                        <p>Groove to AI-powered music recommendations and mood playlists. Discover new artists and genres tailored to your vibe.</p>
+                        <div class="app-meta">
+                            <span class="app-category">Music</span>
+                            <span class="app-rating">★ 4.8</span>
+                        </div>
+                        <button class="btn btn-primary">Install</button>
+                    </div>
+                    <!-- Superior Horse App Card -->
+                    <div class="app-card">
+                        <img src="images/business-using-ai.avif" alt="Superior Horse" class="app-icon">
+                        <h3>Superior Horse</h3>
+                        <p>AI-powered equestrian management for training, health tracking, and competition analytics. Elevate your stable's performance.</p>
+                        <div class="app-meta">
+                            <span class="app-category">Sports</span>
+                            <span class="app-rating">★ 4.7</span>
+                        </div>
+                        <button class="btn btn-primary">Install</button>
+                    </div>
+                    <!-- ViewVault App Card -->
+                    <div class="app-card">
+                        <img src="images/business-using-ai.avif" alt="ViewVault" class="app-icon">
+                        <h3>ViewVault</h3>
+                        <p>Securely store, organize, and share your digital content with advanced AI search and privacy controls. Your vault, your rules.</p>
+                        <div class="app-meta">
+                            <span class="app-category">Productivity</span>
+                            <span class="app-rating">★ 4.9</span>
+                        </div>
+                        <button class="btn btn-primary">Install</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/pinata-logo.webp" alt="Pinata" class="footer-logo-img">
+                    <p>Your AI team that never sleeps</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/pinata-digital-marketing-inc/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/pinataadmin?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="ai-agents.html">AI Agents</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="app-store.html">App Store</a></li>
+                        <li><a href="revolution.html">Pinata's Revolution</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="company.html">About Us</a></li>
+                        <li><a href="investors.html">Investors</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html#support">Documentation</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pinata. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

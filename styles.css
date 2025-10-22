@@ -324,9 +324,9 @@ p {
     min-height: 100vh;
     display: flex;
     align-items: center;
-        background: 
-            radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.3) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.3) 0%, transparent 50%),
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 1) 0%, transparent 50%),
             radial-gradient(circle at 40% 80%, rgba(255, 107, 107, 0.2) 0%, transparent 50%);
     position: relative;
     overflow: hidden;
@@ -699,7 +699,7 @@ p {
 
 /* Page Hero */
 .page-hero {
-    padding: 8rem 0 4rem;
+    padding: 4rem 0 4rem;
     background: var(--gradient-dark);
     text-align: center;
 }
@@ -2378,9 +2378,9 @@ p {
 .benefit-card h3 {
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: var(--spacing-md);
-    background: var(--gradient-primary);
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -4933,14 +4933,12 @@ section {
 /* Use these classes to ensure proper background alternation */
 
 /* AI Agents Page Specific Backgrounds */
-body.ai-agents .page-hero { background: transparent !important; }
 body.ai-agents .ai-agents-showcase { background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)) !important; }
 body.ai-agents .roi-calculator { background: rgba(0, 0, 0, 0.05) !important; }
 body.ai-agents .implementation { background: linear-gradient(135deg, rgba(118, 75, 162, 0.08), rgba(255, 107, 107, 0.05)) !important; }
 body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 
 /* Career Page Specific Backgrounds */
-.careers .page-hero { background: transparent; }
 .careers .why-work-here { background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)); }
 .careers .company-culture { background: linear-gradient(135deg, rgba(118, 75, 162, 0.1), rgba(255, 107, 107, 0.05)); }
 .careers .salary-transparency { background: rgba(0, 0, 0, 0.05); }
@@ -4953,7 +4951,6 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .pricing .faq { background: linear-gradient(135deg, rgba(118, 75, 162, 0.08), rgba(255, 107, 107, 0.05)); }
 
 /* Marketplace Page Specific Backgrounds */
-.marketplace .page-hero { background: transparent; }
 .marketplace .founding-vendor { background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)); }
 .marketplace .vendor-application { background: rgba(0, 0, 0, 0.05); }
 
@@ -5673,11 +5670,11 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(90deg, rgba(102, 126, 234, 1), var(--accent-color));
 }
 
 .featured-founder .leader-photo .photo-placeholder {
-    background: linear-gradient(135deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), var(--accent-color));
 }
 
 .leader-vision {
@@ -5722,7 +5719,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .expansion-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), var(--accent-color));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -5770,7 +5767,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
     content: '•';
     position: absolute;
     left: 0;
-    color: rgba(102, 126, 234;
+    color: rgba(102, 126, 234, 1);
     font-weight: bold;
 }
 
@@ -5833,7 +5830,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .advisor-expertise {
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgba(102, 126, 234;
+    color: rgba(102, 126, 234, 1);
     margin-bottom: 0.75rem;
 }
 
@@ -5960,7 +5957,7 @@ section {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(90deg, rgba(102, 126, 234, 1), var(--accent-color));
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -5978,7 +5975,7 @@ section {
 .culture-number {
     font-size: 3rem;
     font-weight: 800;
-    background: linear-gradient(135deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -6002,7 +5999,6 @@ section {
 /* Use these classes to ensure proper background alternation */
 
 /* AI Agents Page Specific Backgrounds */
-body.ai-agents .page-hero { background: transparent !important; }
 body.ai-agents .ai-agents-showcase { background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)) !important; }
 body.ai-agents .roi-calculator { background: rgba(0, 0, 0, 0.05) !important; }
 body.ai-agents .implementation { background: linear-gradient(135deg, rgba(118, 75, 162, 0.08), rgba(255, 107, 107, 0.05)) !important; }
@@ -6110,7 +6106,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .icon-wrapper {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, rgba(118, 75, 162);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -6129,7 +6125,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0%, var(--accent-color) 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0), var(--accent-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -6201,7 +6197,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 }
 
 .highlight-text {
-    background: linear-gradient(135deg, rgba(102, 126, 234 0%, var(--accent-color) 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0), var(--accent-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -6249,7 +6245,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .value-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, rgba(118, 75, 162);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1));
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -6263,7 +6259,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 }
 
 .value-badge {
-    background: linear-gradient(135deg, var(--accent-color) 0%, rgba(102, 126, 234 100%);
+    background: linear-gradient(135deg, var(--accent-color) 0%, rgba(102, 126, 234, 1) 100%);
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
@@ -6495,7 +6491,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(90deg, rgba(102, 126, 234, 1), var(--accent-color));
 }
 
 .job-card:hover {
@@ -6525,7 +6521,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 }
 
 .job-type {
-    background: linear-gradient(135deg, rgba(102, 126, 234 0%, rgba(118, 75, 162 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0) 0%, rgba(118, 75, 162, 1) 100%);
     color: white;
     padding: 6px 16px;
     border-radius: 20px;
@@ -6596,7 +6592,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .step-number {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, rgba(102, 126, 234 0%, rgba(118, 75, 162 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0) 0%, rgba(118, 75, 162, 1) 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -6647,7 +6643,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .benefit-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), var(--accent-color));
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -6694,7 +6690,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .contact-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, rgba(102, 126, 234 0%, rgba(118, 75, 162 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0) 0%, rgba(118, 75, 162, 1) 100%);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -6742,11 +6738,11 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(90deg, rgba(102, 126, 234, 1), var(--accent-color));
 }
 
 .featured-founder .leader-photo .photo-placeholder {
-    background: linear-gradient(135deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), var(--accent-color));
 }
 
 .leader-vision {
@@ -6770,7 +6766,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
     left: 0;
     top: -10px;
     font-size: 3rem;
-    color: rgba(102, 126, 234;
+    color: rgba(102, 126, 234, 1);
     line-height: 1;
 }
 
@@ -6791,7 +6787,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .expansion-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), var(--accent-color));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -6818,7 +6814,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 }
 
 .role-category h4 {
-    color: rgba(102, 126, 234;
+    color: rgba(102, 126, 234, 1);
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -6839,7 +6835,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
     content: '•';
     position: absolute;
     left: 0;
-    color: rgba(102, 126, 234;
+    color: rgba(102, 126, 234, 1);
     font-weight: bold;
 }
 
@@ -6902,7 +6898,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .advisor-expertise {
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgba(102, 126, 234;
+    color: rgba(102, 126, 234, 1);
     margin-bottom: 0.75rem;
 }
 
@@ -7029,7 +7025,7 @@ section {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(90deg, rgba(102, 126, 234, 1), var(--accent-color));
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -7047,7 +7043,7 @@ section {
 .culture-number {
     font-size: 3rem;
     font-weight: 800;
-    background: linear-gradient(135deg, rgba(102, 126, 234, var(--accent-color));
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -7071,7 +7067,6 @@ section {
 /* Use these classes to ensure proper background alternation */
 
 /* AI Agents Page Specific Backgrounds */
-body.ai-agents .page-hero { background: transparent !important; }
 body.ai-agents .ai-agents-showcase { background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)) !important; }
 body.ai-agents .roi-calculator { background: rgba(0, 0, 0, 0.05) !important; }
 body.ai-agents .implementation { background: linear-gradient(135deg, rgba(118, 75, 162, 0.08), rgba(255, 107, 107, 0.05)) !important; }
@@ -7179,7 +7174,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .icon-wrapper {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, rgba(118, 75, 162);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -7198,7 +7193,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0%, var(--accent-color) 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0), var(--accent-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -7270,7 +7265,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 }
 
 .highlight-text {
-    background: linear-gradient(135deg, rgba(102, 126, 234 0%, var(--accent-color) 100%);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0), var(--accent-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -7318,7 +7313,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 .value-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, rgba(102, 126, 234, rgba(118, 75, 162);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1));
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -7332,7 +7327,7 @@ body.ai-agents .final-cta { background: rgba(0, 0, 0, 0.08) !important; }
 }
 
 .value-badge {
-    background: linear-gradient(135deg, var(--accent-color) 0%, rgba(102, 126, 234 100%);
+    background: linear-gradient(135deg, var(--accent-color) 0%, rgba(102, 126, 234, 1) 100%);
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;

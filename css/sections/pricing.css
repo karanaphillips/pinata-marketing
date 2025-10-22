@@ -1,15 +1,17 @@
 /* Pricing */
 /* Pricing Section */
-.pricing {
+.pricing,
+.vendor-pricing {
     padding: var(--spacing-xl) 0;
-    background: var(--background-dark);
+    background: var(--background-card);
 }
 
-.pricing-grid {
+.pricing-grid,
+.pricing-comparison {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--spacing-lg);
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -82,19 +84,45 @@
 .pricing-features ul {
     list-style: none;
     text-align: left;
-    margin: var(--spacing-md) 0;
+    margin: var(--spacing-md) 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .pricing-features li {
+    position: relative;
+    padding-left: 2rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
     display: flex;
     align-items: center;
-    margin-bottom: var(--spacing-sm);
-    color: var(--text-secondary);
+    min-height: 1.8em;
 }
 
 .pricing-features li i {
-    color: var(--text-accent);
-    margin-right: var(--spacing-sm);
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    font-size: 1.1em;
+    width: 1.5em;
+    text-align: center;
+}
+.pricing-features li .fa-check {
+    color: var(--primary);
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 50%;
+    padding: 0.1em 0.2em;
+    box-shadow: 0 1px 4px rgba(102,126,234,0.10);
+}
+.pricing-features li .fa-times {
+    color: #e57373;
+    background: #fff0f0;
+    border-radius: 50%;
+    padding: 0.1em 0.2em;
+    box-shadow: 0 1px 4px rgba(229,115,115,0.10);
 }
 
 .plan-description {

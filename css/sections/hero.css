@@ -1,7 +1,39 @@
+body.revolution .page-hero {
+    padding: 6rem 0 4rem;
+    background: var(--gradient-dark);
+    position: relative;
+    overflow: hidden;
+}
+body.revolution .page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(0,212,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+}
+body.company .page-hero,
+body.technology .page-hero {
+    padding-top: 6rem;
+}
+body.ai-agents .page-hero,
+body.app-store .page-hero,
+body.marketplace .page-hero,
+body.contact .page-hero {
+    margin-top: 0 !important;
+}
+/* Consistent top margin for all non-homepage hero sections except company */
+body.technology .page-hero,
+body.blog .page-hero,
+body.job-listings .page-hero {
+    margin-top: 0 !important;
+}
 /* Center hero-content horizontally and vertically for all hero sections (override grid for contact/marketplace) */
-body.contact .hero-container,
-body.marketplace .hero-container,
-body.ai-agents .hero-container {
+.page-hero > .container {
     display: flex !important;
     flex-direction: column;
     align-items: center;
@@ -72,7 +104,7 @@ body.ai-agents .page-hero::before {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 2.8rem;
     margin-bottom: var(--spacing-md);
 }
 

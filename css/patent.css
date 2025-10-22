@@ -1,0 +1,34 @@
+.patent-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.patent-item {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 2rem 1.5rem;
+  min-width: 260px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+.patent-item:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+@media (max-width: 900px) {
+  .patent-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .patent-item {
+    width: 100%;
+    max-width: 100%;
+  }
+}
